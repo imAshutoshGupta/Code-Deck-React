@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 const InputWithSelect = styled.div`
   display: grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 1.2rem;
   align-items: center;
@@ -17,11 +17,12 @@ const InputWithSelect = styled.div`
   input {
     flex-grow: 1;
     height: 2rem;
+    padding-left: 0.5rem;
   }
 
   button {
     background: #241f21;
-    height: 2.5rem;
+    height: 3rem;
     color: white;
     padding: 0.3rem 2rem;
   }
@@ -57,7 +58,7 @@ const NewPlaygroundAndFolder = () => {
   return (
     <>
       <Header>
-        <h2>Create New Playground & Create New Folder</h2>
+        <h2>Create New Playground</h2>
         <CloseButton onClick={() => closeModal()}>
           <IoCloseSharp />
         </CloseButton>
